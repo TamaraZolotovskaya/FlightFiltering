@@ -1,5 +1,7 @@
 package com.gridnine.testing.model;
 
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -9,7 +11,7 @@ import java.util.stream.Collectors;
 public class Flight {
     private final List<Segment> segments;
 
-    Flight(final List<Segment> segs) {
+    public Flight(final List<Segment> segs) {
         segments = segs;
     }
 
@@ -17,9 +19,24 @@ public class Flight {
         return segments;
     }
 
-    public boolean arrivalBeforeDeparture(){
+    public boolean DepartureInThePast() {
         return getSegments().stream()
-                .anyMatch(segment -> segment.getDepartureDate().isBefore(segment.getArrivalDate()));
+                .anyMatch(segment -> segment.getDepartureDate().isBefore(LocalDateTime.now()));
+    }
+
+    public boolean ArrivalBeforeDeparture() {
+        return getSegments().stream()
+                .anyMatch(segment -> segment.getArrivalDate().isBefore(segment.getDepartureDate()));
+    }
+
+    public double groundTime() {
+        List<Segment> segments = getSegments();
+        double sum = 0;
+        for (int i = 1; i < segments.size(); i++) {
+            double diff = ChronoUnit.HOURS.between(segments.get(i - 1).getArrivalDate(), segments.get(i).getDepartureDate());
+            sum = sum + diff;
+        }
+        return sum;
     }
 
     @Override

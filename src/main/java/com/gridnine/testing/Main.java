@@ -1,9 +1,5 @@
 package com.gridnine.testing;
 
-/*Хочу попасть в следующий поток карьерного центра,
-поэтому сдаю аттестацию формально, чтобы получить доступ к дополнительным материалам.
-Можно дальше не смотреть, просто поставьте Не сдала*/
-
 import com.gridnine.testing.model.Flight;
 import com.gridnine.testing.model.FlightBuilder;
 
@@ -20,7 +16,9 @@ public class Main {
         flights.forEach(System.out::println);
 
         while (true) {
-            System.out.println("Выберите пункт меню:");
+            System.out.println("Исключить из перелётов \n" +
+                    "Выберите пункт меню:");
+
             printMenu();
             Scanner scanner = new Scanner(System.in);
             if (scanner.hasNextInt()) {

@@ -3,6 +3,7 @@ package com.gridnine.testing.model;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
@@ -45,5 +46,16 @@ public class Flight {
                 .collect(Collectors.joining(" "));
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Flight)) return false;
+        Flight flight = (Flight) o;
+        return Objects.equals(segments, flight.segments);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(segments);
+    }
 }

@@ -1,53 +1,54 @@
 package com.gridnine.testing.model;
 
-import com.gridnine.testing.testFlights;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static com.gridnine.testing.TestFlights.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 class FlightTest {
 
     @Test
     @DisplayName("When departure in the past then true")
-    void departureInThePast(){
-        Assertions.assertTrue(testFlights.flightWithDepartureInThePast.DepartureInThePast());
+    void departureInThePast() {
+        assertTrue(flightWithDepartureInThePast.DepartureInThePast());
     }
 
     @Test
     @DisplayName("When departure in the future then false")
-    void departureInTheFuture(){
-        Assertions.assertFalse(testFlights.flightWithThreeHourGroundTime.DepartureInThePast());
+    void departureInTheFuture() {
+        assertFalse(flightWithThreeHourGroundTime.DepartureInThePast());
     }
 
     @Test
     @DisplayName("When arrival after departure then false")
     void arrivalAfterDeparture() {
-        Assertions.assertFalse(testFlights.flightWithThreeHourGroundTime.ArrivalBeforeDeparture());
+        assertFalse(flightWithThreeHourGroundTime.ArrivalBeforeDeparture());
     }
 
     @Test
     @DisplayName("When departure and arrival in the same time then false")
     void arrivalEqualDeparture() {
-        Assertions.assertFalse(testFlights.flightWithArrivalEqualDeparture.ArrivalBeforeDeparture());
+        assertFalse(flightWithArrivalEqualDeparture.ArrivalBeforeDeparture());
     }
 
     @Test
     @DisplayName("When arrival before departure then true")
     void arrivalBeforeDeparture() {
-        Assertions.assertTrue(testFlights.flightWithArrivalBeforeDepartureSegment.ArrivalBeforeDeparture());
+        assertTrue(flightWithArrivalBeforeDepartureSegment.ArrivalBeforeDeparture());
     }
 
 
     @Test
     @DisplayName("When one segment then ground time is zero")
     void zeroGroundTime() {
-        Assertions.assertEquals(0, testFlights.flightWithOneNormalSegment.groundTime());
+        assertEquals(0, flightWithOneNormalSegment.groundTime());
     }
 
     @Test
     @DisplayName("Ground time is three hour")
     void ThreeHoursGroundTime() {
-        Assertions.assertEquals(3, testFlights.flightWithThreeHourGroundTime.groundTime());
+        assertEquals(3, flightWithThreeHourGroundTime.groundTime());
     }
 }

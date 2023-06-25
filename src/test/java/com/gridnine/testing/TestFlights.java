@@ -6,7 +6,7 @@ import com.gridnine.testing.model.Segment;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class testFlights {
+public class TestFlights {
     public static LocalDateTime threeDaysFromNow = LocalDateTime.now().plusDays(3);
     public static Segment normalSegment = new Segment(threeDaysFromNow, threeDaysFromNow.plusHours(2));
     public static Segment normalSegment2 = new Segment(threeDaysFromNow.plusHours(4), threeDaysFromNow.plusHours(6));

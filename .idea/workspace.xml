@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fda45ec-bdbf-448c-8dab-ab8bc4429b94" name="Changes" comment="add menu and 2 filters: filterDepartingInThePast and filterArrivalBeforeDeparture">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/service/FilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/testFlights.java" afterDir="false" />
+    <list default="true" id="3fda45ec-bdbf-448c-8dab-ab8bc4429b94" name="Changes" comment="added filterMoreThanTwoHoursGroundTime, tests for all Flight.java and all Filter.java methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FilterMenuMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FilterMenuMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/service/FilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/service/FilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/testFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/TestFlights.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/homework"
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/course4/Mockito"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,7 +60,7 @@
       <recent name="com.gridnine.testing.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FlightTest">
+  <component name="RunManager" selected="JUnit.FilterTest">
     <configuration name="FilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightFiltering" />
       <extension name="coverage">
@@ -94,17 +92,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilterTest.filterMoreThanTwoHoursGroundTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightFiltering" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gridnine.testing.service.*" />
+          <option name="PATTERN" value="com.gridnine.testing.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gridnine.testing.service" />
-      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.service.FilterTest" />
-      <option name="METHOD_NAME" value="filterMoreThanTwoHoursGroundTime" />
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.model" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.model.FlightBuilderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightBuilderTest.createFlightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightFiltering" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.model" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.model.FlightBuilderTest" />
+      <option name="METHOD_NAME" value="createFlightTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,28 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightTest.ThreeHoursGroundTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FlightFiltering" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gridnine.testing.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gridnine.testing.model" />
-      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.model.FlightTest" />
-      <option name="METHOD_NAME" value="ThreeHoursGroundTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FlightTest" />
         <item itemvalue="JUnit.FilterTest" />
-        <item itemvalue="JUnit.FlightTest.ThreeHoursGroundTime" />
-        <item itemvalue="JUnit.FilterTest.filterMoreThanTwoHoursGroundTime" />
+        <item itemvalue="JUnit.FlightTest" />
+        <item itemvalue="JUnit.FlightBuilderTest" />
+        <item itemvalue="JUnit.FlightBuilderTest.createFlightTest" />
         <item itemvalue="JUnit.FilterTest.filterDepartingInThePast" />
       </list>
     </recent_temporary>
@@ -163,7 +160,8 @@
       <workItem from="1686384578719" duration="12787000" />
       <workItem from="1686498006834" duration="5266000" />
       <workItem from="1686830847019" duration="4046000" />
-      <workItem from="1686912209503" duration="10923000" />
+      <workItem from="1686912209503" duration="11628000" />
+      <workItem from="1687684117409" duration="4047000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1686323307568</created>
@@ -179,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686410699174</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added filterMoreThanTwoHoursGroundTime, tests for all Flight.java and all Filter.java methods">
+      <created>1686946300239</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686946300239</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +204,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="add menu and 2 filters: filterDepartingInThePast and filterArrivalBeforeDeparture" />
-    <option name="LAST_COMMIT_MESSAGE" value="add menu and 2 filters: filterDepartingInThePast and filterArrivalBeforeDeparture" />
+    <MESSAGE value="added filterMoreThanTwoHoursGroundTime, tests for all Flight.java and all Filter.java methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added filterMoreThanTwoHoursGroundTime, tests for all Flight.java and all Filter.java methods" />
   </component>
 </project>

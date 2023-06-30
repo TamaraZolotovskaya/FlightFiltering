@@ -2,6 +2,12 @@ package com.gridnine.testing.service;
 
 public class PrintMenu {
 
+    /**
+     * Displays a menu with filter types in the console.
+     *
+     * @see Filter
+     * @see FilterMenuMap
+     */
     public static void printMenu() {
         System.out.println(
                 " 1. вылет до текущего момента времени \n" +

@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fda45ec-bdbf-448c-8dab-ab8bc4429b94" name="Changes" comment="added filterMoreThanTwoHoursGroundTime, tests for all Flight.java and all Filter.java methods">
+    <list default="true" id="3fda45ec-bdbf-448c-8dab-ab8bc4429b94" name="Changes" comment="Add image with test coverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightBuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/model/FlightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/service/FilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/service/FilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/testFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/TestFlights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FilterMenuMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FilterMenuMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/PrintMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/PrintMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,9 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -41,16 +42,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/course4/Mockito"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/course4/Mockito&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -162,6 +166,8 @@
       <workItem from="1686830847019" duration="4046000" />
       <workItem from="1686912209503" duration="11628000" />
       <workItem from="1687684117409" duration="4047000" />
+      <workItem from="1687769118581" duration="9311000" />
+      <workItem from="1688136827418" duration="998000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1686323307568</created>
@@ -184,7 +190,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686946300239</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed filterDepartingInThePast, added filterMoreThanTwoHoursGroundTime and tests,">
+      <created>1687693561478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687693561478</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add image with test coverage">
+      <created>1687707757552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687707757552</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add image with test coverage">
+      <created>1687708264464</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687708264464</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add image with test coverage">
+      <created>1687708706294</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687708706294</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +239,13 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="add menu and 2 filters: filterDepartingInThePast and filterArrivalBeforeDeparture" />
     <MESSAGE value="added filterMoreThanTwoHoursGroundTime, tests for all Flight.java and all Filter.java methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added filterMoreThanTwoHoursGroundTime, tests for all Flight.java and all Filter.java methods" />
+    <MESSAGE value="changed filterDepartingInThePast, added filterMoreThanTwoHoursGroundTime and tests," />
+    <MESSAGE value="Add image with test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add image with test coverage" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FlightFiltering$Main.ic" NAME="Main Coverage Results" MODIFIED="1687707070971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.gridnine.testing.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -5,7 +5,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 /**
- * Bean that represents a flight segment.
+ * Bean that represents a flight segment.<br>
+ * Segment is an atomic shipment that is defined by two attributes:
+ * the date and time of departure and the date and time of arrival.
  */
 public class Segment {
     private final LocalDateTime departureDate;
